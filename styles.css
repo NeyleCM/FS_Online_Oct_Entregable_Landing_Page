@@ -1,22 +1,299 @@
 *{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
 box-sizing: border-box;
+font-family: sans-serif;
+font-size: 15px;
 }
 
-body {
-    font-family: "roboto", sans-serif;
-    margin: 0;
+.logo {
+    height: 60px;
+}
+header {
+    display: flex;
+align-items: center;
+background-color: white;
+}
+
+header a {
+    text-decoration: none;
+    padding: 5px 12px;
+    color: rgba(0,157,149,1);
+    transition: all .3s linear;
+}
+
+header a:hover {
+    color: rgba(232,153,159,1);
+    transition: all .3s linear;
+}
+.nav-list {
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgba(0,157,149,1);
+    float: left;
+    line-height: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#checkbox, .cerrar-menu {
+    display: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    padding-top: 400px;
+    padding-left: 40px;
+    color: rgb(245,245,245);
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)) ,url("Skin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
 }
 
 button {
-    justify-content: space-around;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgba(232,153,159,1);
+    border-radius: 50px;
+    padding: 20px;
+    transition: all .4s linear;
+    border: 1px solid rgba(232,153,159,1);
+    }
+    
+    h4 {
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+    button:hover {
+        background-color: rgb(196, 116, 130);
+        transition: all .4s linear;
+    }
+
+
+/* MENÚ OCULTO */
+
+@media (max-width: 580px) {
+     .checkbtn, .cerrar-menu {
+        display: block;
+    }
+
+    .nav1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: aliceblue;
+        padding: 10px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        transition: all .5s;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+/*
+@media (min-width: 680px) {
+    .checkbtn, .cerrar-menu {
+        display: block;
+    }
+}
+
+.nav1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: aliceblue;
+    padding: 10px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+
+}
+
+.nav-list {
+    flex-direction: column;
+    align-items: end;
+}
+
+
+
+@media (max-width: 768px) {
+    .checkbtn, .cerrar-menu {
+        display: block;
+    }
+}
+
+.nav1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: aliceblue;
+    padding: 10px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+}
+
+.nav-list {
+    flex-direction: column;
+    align-items: end;
+}
+
+
+
+
+/*.containerNav {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(241, 210, 215);
+    height: 150px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 35px 35px;
+}
+
+.logo {
+    height: 60px;
+}
+
+header a {
+    color: rgba(0,157,149,1);
+    transition: all .3s linear;
+}
+
+header a:hover {
+    color: rgba(232,153,159,1);
+    transition: all .3s linear;
+}
+nav ul {
+    gap: 30px;
+    padding-top: 30px;
+    padding-left: 350px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.sectionWeb2 {
+    display: flex;
+    line-height: 80px;
+    margin: 0 20px;
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgba(0,157,149,1);
+    float: left;
+    line-height: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#checkbox {
+    display: none;
+}
+
+section {
+    display: flex;
+    background: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)) ,url(Skin.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - -1000px);
+}
+
+@media (max-width: 480px) {
+ .checkbtn {
+display: block;
+}
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 150px;
+    right: -100%;
+}
+}
+
+
+@media ()
+
+AQUÍ TERMINA ESTE CÓDIGO --------------------------------------
+
+*/
+
+/*
+body {
+    font-family: "futura", sans-serif;
+    margin: 0;
+}
+
+nav .sectionWeb {
+width: 100%;
+height: 80px;
+}
+ nav ul {
+    float: left;
+ }
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 80px;
+    margin: 10px 10px;
+}
+
+.enlace {
+    position: left;
+    padding: 20px 40px;
+}
+
+button {
+justify-content: space-between;
 color: white;
-font-weight: bold;
-background-color: pink;
+font-size: medium;
+background-color: rgba(232,153,159,1);
+border-radius: 50px;
+padding: 20px;
+transition: all .4s linear;
 }
 
 button:hover {
     background-color: rgb(196, 116, 130);
+    transition: all .4s linear;
+
 }
+
+/*
 .containerNav {
     margin: auto;
 }
@@ -26,37 +303,30 @@ header {
     margin: 0;
 }
 
-h2 {
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
-    padding-left: 70px;
-    color: rgb(65, 182, 143);
-}
-
 header .containerNav {
 display: flex;
+flex-direction: column;
 align-items: center;
-justify-content: center;
-padding-bottom: 35px;
+padding: 50px 50px;
 }
 
-header .containerNavDos {
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
-    padding-bottom: 35px;
-}
+@media (min-width: 720px) {
+    header .containerNav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    }
 
 header a {
     text-decoration: none;
     padding: 5px 12px;
-    color: rgb(65, 182, 143);;
+    color: rgba(0,157,149,1);
+    transition: all .3s linear;
 }
 
-.logo-img {
-    display: flex;
-    align-items: center;
+header a:hover {
+    color: rgba(232,153,159,1);
+    transition: all .3s linear;
 }
 
 #protector {
@@ -74,4 +344,4 @@ header a {
     background-position: center center;
 }
 
-
+@media */
